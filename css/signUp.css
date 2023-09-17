@@ -245,6 +245,7 @@ input{
     justify-content: center;
     position:relative;
     margin-bottom: 15px;
+    font-size: 13px;
 }
 
 .Q1 a{
@@ -255,7 +256,7 @@ input{
 .Q1 .svg{
     
     position:absolute;
-    left:26%;
+    left:23.5%;
     bottom:0px;
 }
 
