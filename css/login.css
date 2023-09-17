@@ -450,6 +450,29 @@ input{
        
     }
 
+
+    
+    .footer .Q1:first-child{
+        text-align: right;
+    }
+
+    .footer .Q1 img:first-child{
+        width:16px;
+        height: 16px;;
+    }
+
+    .footer .Q1:last-child img{
+        width:18px;
+        height:18px;;
+    }
+
+    .footer .Q1:last-child{
+        margin-top: 15px;
+        align-items: center;
+        text-align: center;
+        font-size:12px;
+
+    }
    
 
    
