@@ -21,7 +21,8 @@ nav {
     background-color : E3E6F3;
     display : flex;
     flex-direction : row;
-    padding: 1rem 3rem;
+    /* 1rem = 16px */
+    padding: 1rem 1rem;
     justify-content : space-between;
     align-items : center;
 }
@@ -38,11 +39,21 @@ ul{
 .button{
     border : none ;
     font-size : 20px;
+    color: #FFFFFF;
     padding :5px 20px;
     border-radius : 20;
     background-color : #000080;
 
+
 }
 a{
     text-decoration : none;
+}
+
+[/* Welcome to PetCare */
+.Welcome {
+    background-color :red;
+    color: #000000;
+    height: 600px;
+    padding: 4rem 8rem;
 }
