@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+*{
+    /* right, left, up, bottom margins are 0 */
+    margin : 0;
+    padding : 0;
+    /* To adding seperate paddings to images without errors using box- sizing */
+    box-sizing : border-box; 
+    font-family : "popins";
+
+}
+
+body {
+    /* this marging says up and bottom margins are 0 but right and left margins are auto. */
+    margin : 0 auto; 
+}
+
+/* navigation */
+
+nav {
+    background-color : E3E6F3;
+    display : flex;
+    flex-direction : row;
+    padding: 1rem 3rem;
+    justify-content : space-between;
+    align-items : center;
+}
+ul{
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    list-style : none;
+    gap: 5rem;
+    font-size : 20px;
+    color :#333333;
+}
+
+.button{
+    border : none ;
+    font-size : 20px;
+    padding :5px 20px;
+    border-radius : 20;
+    background-color : #000080;
+
+}
+a{
+    text-decoration : none;
+}
