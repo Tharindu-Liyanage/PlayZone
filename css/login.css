@@ -102,6 +102,8 @@ p{
     width: 100%;
     height: 54px;
     border:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
    
 }
 
@@ -116,7 +118,7 @@ p{
     position: relative;
     left:-15%;
     width:600px; /*728*/
-    height:550px;
+    height:500px; /*550*/
    
    
 
@@ -236,15 +238,20 @@ input{
     margin-right:5px;
     position: relative;
     top:4.5px;
-    width:18px;
-    height:18px;
+    width:15px;
+    height:15px;
    
 }
 
 .Q2{
     font-size:13px;
+    text-align: center;
 }
 
+.Q2 .img2{
+    width:18px;
+    height:18px;
+}
 
 
 

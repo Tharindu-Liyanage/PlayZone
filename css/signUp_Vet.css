@@ -283,6 +283,7 @@ input{
     margin: 10px 0;
     background-color:#EDF2F7 ;
     padding-top: 15px;
+    cursor: pointer;
     
 
 }
@@ -290,6 +291,92 @@ input{
 .drop-area :where(i,p){
     color:#222;
 }
+
+.drop-area i{
+    font-size:20px;
+}
+
+.drop-area p{
+    font-size:13px;
+    margin-top: 10px;
+}
+
+section .row{
+    background-color:#EDF2F7;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+section .row i{
+    font-size:30px;
+    color:#717296;
+}
+
+section .details span{
+    font-size:14px;
+}
+
+.progress-area .row .content{
+    width:100%;
+    margin-left:15px;
+}
+
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-area .progress-bar{
+    height: 6px;
+    width:100%;
+    background:#fff ;
+    margin-bottom: 4px;
+    border-radius: 30px;
+}
+
+.progress-bar .progress{
+    height:100%;
+    width:0%;
+    background:#667eea ;
+    border-radius: inherit;
+}
+
+.uploaded-area .row .content{
+    display:flex;
+    align-items: center;
+
+}
+
+.uploaded-area .row .details{
+    display: flex;
+    margin-left:15px;
+    flex-direction: column;
+
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width:0px;
+}
+
+.uploaded-area {
+    max-height: 230px;
+    overflow-y:scroll ;
+
+}
+
+.uploaded-area .fa-check{
+    color:#667eea;
+}
+
+
 
 
 
