@@ -50,10 +50,38 @@ a{
     text-decoration : none;
 }
 
-[/* Welcome to PetCare */
+/* Welcome to PetCare */
 .Welcome {
-    background-color :red;
+    background-color : #F7FAFC;
     color: #000000;
     height: 600px;
     padding: 4rem 8rem;
+}
+ 
+h1{
+    font-size:4rem;
+}
+h2{
+    font-size : 4rem;
+}
+p{
+    opacity : 0.5;
+    text-decoration-color: #333333;
+}
+
+.appoinments{
+    border : none ;
+    font-size : 20px;
+    color: #FFFFFF;
+    padding :5px 20px;
+    border-radius : 20;
+    background-color : #000080;
+}
+
+.puppy1{
+position: absolute;
+width: 646px;
+height: 646px;
+left: 663px;
+top: 186px;
 }
