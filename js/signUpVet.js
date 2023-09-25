@@ -1,32 +1,17 @@
-const form = document.querySelector(".drop-area"),
-fileInput = form.querySelector(".file-input"),
-progressArea = document.querySelector(".progress-area"),
-uploadedArea = document.querySelector(".uploaded-area");
+const fileInputs = document.querySelectorAll('.input-file');
 
-form.addEventListener("click",()=>{
-    fileInput.click();
+        fileInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                const file = input.files[0];
+                const allowedTypes = ['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'];
 
-    
-});
-
-fileInput.onchange = ({target}) =>{
-    let file = target.files[0]; // getting file and [0] this mean if user has multiple file first one get
-
-    if(file){
-        let fileName =file.name; // getting selected file name
-        uploadFile(fileName); // calling uploadFile with passing file name 
- 
-    }
-}
-
-function uploadFile(name){
-    let xhr = new XMLHttpRequest(); //creating new xml object
-    xhr.open("POST","../php/upload.php"); // path to upload php
-    xhr.upload.addEventListener("progress", e=>{
-        console.log(e);
-    });
-    xhr.send();
-
-    let formData = new FormData(form); // formData is an object to easily send from data
-    xhr.send(formData); //sending form data to php
-}
+                if (file && allowedTypes.includes(file.type)) {
+                    // File is valid
+                    console.log('File is valid:', file.name);
+                } else {
+                    // File is not valid
+                    alert('Please select a valid PDF or image file.');
+                    input.value = ''; // Clear the input field
+                }
+            });
+        });

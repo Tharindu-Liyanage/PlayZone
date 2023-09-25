@@ -16,6 +16,7 @@ body{
     margin: -20px 0 50px;
     color: #222222;
     background-color: #F7FAFC;
+    margin-top: 50px;
     
 }
 
@@ -130,7 +131,7 @@ form{
 }
 
 input.last{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .name-field{
@@ -212,6 +213,7 @@ input{
     height:100%;
     background-position: 0 0;
     background-size: cover;
+    width:90%;
 
     border-radius:0 24px 24px 0;
     background-color:#EBF4FF;
@@ -225,8 +227,9 @@ input{
 .overlay-img{
     
    position: relative;
-    top:120px;
+    top:200px;
     height: auto;
+    width:98%;
   
 }
 
@@ -264,117 +267,57 @@ input{
 
 
 
-.wrapper{
-    width:100%;
+input[type=file] {
+    width: 100%;
+    margin: 5px 0;
+    color: #6c6e70;
+    padding: 5px;
+    background:#EDF2F7;
     border-radius: 6px;
-    
+    border: none;
+    height: 45px;
+    border-color: #e2e8f0;
 
+  }
 
-}
+  .inputs{
+    margin:10px 0;
+  }
 
-.wrapper .drop-area{
-    height:80px;
+  .inputs p{
+    font-size: 15px;
+    margin: 0;
+    color: #222;
+    font: 500 14px "Poppins", sans-serif;
+
+  }
+
+  .inputs:last-child{
+    margin-bottom: 20px;
+  }
+
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #667eea;
+    padding: 0px 20px;
     border-radius: 6px;
-    border: 2px dashed #717296;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px 0;
-    background-color:#EDF2F7 ;
-    padding-top: 15px;
+    color: #fff;
     cursor: pointer;
-    
+    height: 100%;
+    font: 500 13px "Poppins", sans-serif;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
 
-}
-
-.drop-area :where(i,p){
-    color:#222;
-}
-
-.drop-area i{
-    font-size:20px;
-}
-
-.drop-area p{
-    font-size:13px;
-    margin-top: 10px;
-}
-
-section .row{
-    background-color:#EDF2F7;
-    margin-bottom: 10px;
-    list-style: none;
-    padding: 15px 20px;
-    border-radius:5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .input-file:hover{
+    box-shadow: #e3eaf9 0px 0px 4px 0px , #e3eaf9 0px 12px 16px 0px;
+  }
 
 
-}
-
-section .row i{
-    font-size:30px;
-    color:#717296;
-}
-
-section .details span{
-    font-size:14px;
-}
-
-.progress-area .row .content{
-    width:100%;
-    margin-left:15px;
-}
-
-.progress-area .details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.progress-area .progress-bar{
-    height: 6px;
-    width:100%;
-    background:#fff ;
-    margin-bottom: 4px;
-    border-radius: 30px;
-}
-
-.progress-bar .progress{
-    height:100%;
-    width:0%;
-    background:#667eea ;
-    border-radius: inherit;
-}
-
-.uploaded-area .row .content{
-    display:flex;
-    align-items: center;
-
-}
-
-.uploaded-area .row .details{
-    display: flex;
-    margin-left:15px;
-    flex-direction: column;
-
-}
-
-.uploaded-area::-webkit-scrollbar{
-    width:0px;
-}
-
-.uploaded-area {
-    max-height: 230px;
-    overflow-y:scroll ;
-
-}
-
-.uploaded-area .fa-check{
-    color:#667eea;
-}
 
 
 
@@ -475,7 +418,8 @@ section .details span{
 
     
     body{
-        background-color: #fff;;
+        background-color: #fff;
+        margin-top: 60px;
     }
 
     .container {

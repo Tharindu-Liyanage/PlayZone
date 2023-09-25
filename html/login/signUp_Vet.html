@@ -13,7 +13,7 @@
     <div class="container">
         <div class="form-container">
 
-            <form action="#">
+            <form class="full-form" action="#">
 
                 <div class="logo">
                     <img class="logo-icon" src="../../img/logo-croped.png">
@@ -39,56 +39,21 @@
                     <input type="text" placeholder="Email" id="email" required>
                     <input type="password" placeholder="Password" id="password" required>
                     <input type="password" placeholder="Re-type Password" id="rePwd" required>
-                    <input class="last" type="number" placeholder="Mobile" id="mobile" required>
+                    <input class="last" type="text" placeholder="Mobile" id="mobile" required>
 
 
                     <!-- upload the docucment-->
-                    <header>• Upload NIC and Medical License</header>
-                        <div class="wrapper">
-                            
-                            <div class="drop-area">
-
-                                   <input type="file" class="file-input" name="file" hidden> 
-
-                                
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <p>Browse File to Upload</p>
-                             </div>
-
-                            <section class="progress-area">
-                                <li class="row">
-                                    <i class="fas fa-file-alt"></i>
-
-                                    <div class="content">
-                                        <div class="details">
-                                            <span class="name">image_o1.png • Uploading</span>
-                                            <span class="percent">50%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </li>
-                            </section>
-                            <section class="uploaded-area">
-                                <li class="row">
-                                    <div class="content">
-
-                                        <i class="fas fa-file-alt"></i>
-                                        <div class="details">
-                                            <span class="name">image_01.png • Uploaded</span>
-                                            <span class="size">70 KB</span>
-                                        </div>
-
-                                    </div>
-                                   <i class="fas fa-check"></i> 
-                                </li>
-                            </section>
+                   
+                    <div class="upload-area">
+                        <div class="inputs">
+                            <p>NIC</p>
+                            <input type="file" class="input-file" accept=".pdf, .jpg, .jpeg, .png" required>
                         </div>
-
-
+                        <div class="inputs">
+                            <p>Medical Licence</p>
+                            <input type="file" class="input-file" accept=".pdf, .jpg, .jpeg, .png" required>
+                        </div>
+                    </div>
 
 
                     <!-- upload the docucment over-->
