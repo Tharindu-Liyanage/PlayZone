@@ -450,7 +450,14 @@ body{
     border-radius: 5px;
     border: 1px solid var(--dark-grey);
     background: none;
+    cursor: pointer;
 }
+
+.content main .personal-info .cancel-btn:hover{      
+   
+}
+
+
 .content main .personal-info .save-changes-btn{
     flex-grow: 1;
     margin-bottom: 30px;
@@ -460,6 +467,7 @@ body{
     background-color: var(--primary);
     color: white;
     padding: 2px;
+    cursor: pointer;
     
 }
 
