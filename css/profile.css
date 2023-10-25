@@ -663,10 +663,22 @@ body{
     border: 1px solid #F8F9FD;
     
 }
-
-.content-box .inner-content{
+.content-box .inner-content {
     display: none;
+    animation: moving 0.5s ease; 
 }
+
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 
 .content-box .inner-content.active{
     display: block;
@@ -679,7 +691,7 @@ body{
 .line{
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 30px;
     width: 90px;
     height: 5px;
     background-color: #7360ff;
