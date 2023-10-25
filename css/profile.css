@@ -402,24 +402,22 @@ body{
 
 
 
-.content main .myprofilepassword{
+.content main .tab-box{
     border-bottom: 2px solid #E4E4E4;
-    display:flex ;
-   
-    
-    
-    
+    display:flex ;    
+    position: relative;
 }
 
-.content main .myprofilepassword .my-profile{
-    text-decoration: underline;
-    color: var(--primary);
-    margin: 10px;
+
+
+.content main .tab-box .tab-btn{
+    margin: 13px;
+    margin-left: 40px;
+    cursor: pointer;
 }
 
-.content main .myprofilepassword .password{
-    margin: 10px;
-}
+
+
 
 .content main .personal-info{
     border-bottom: 2px solid #E4E4E4;
@@ -491,7 +489,7 @@ body{
     
 }
 
-.content main .email,.address, .mobile, .nic ,.name {
+.content main .email,.address, .mobile, .nic ,.name ,.current-password ,.new-password ,.new-confirm-password ,.billing-email ,.street-address ,.city ,.province {
     border-bottom: 2px solid #E4E4E4;
     display: flex;
     padding-top :15px;
@@ -609,10 +607,85 @@ body{
 
 
 
+.content main form .content-box .inner-content .current-password,.new-confirm-password,.new-password{
+    display: flex;
+}
 
+.password-label{
+    width: 40%;
+}
 
+.password-box{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #F8F9FD;
+    width: 400px;
+}
 
+.inner-content .new-password .new-password-right{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.inner-content .new-password .new-password-right .new-password-text{
+    font-size: 0.6rem;
+    padding: 5px;
+    color: var(--dark-grey);
+}
+
+.billing-email ,.street-address ,.city ,.province{
+    display: flex;
+}
+
+.street-address-text ,.province-text ,.city-text ,.billing-email-text {
+    width: 40%;
+}
+
+.billing-email .billing-email-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.billing-email .billing-email-left .billing-email-text-small{
+    font-size: 0.7rem;
+    color: var(--dark-grey);
+    
+}
+.billing-email .billing-email-left .billing-email-text{
+    width: 40%;
+}
+
+.text-box1{
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #F8F9FD;
+    
+}
+
+.content-box .inner-content{
+    display: none;
+}
+
+.content-box .inner-content.active{
+    display: block;
+}
+
+.tab-box .tab-btn.active{
+    color: var(--primary);
+}
+
+.line{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 90px;
+    height: 5px;
+    background-color: #7360ff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
