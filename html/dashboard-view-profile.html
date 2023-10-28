@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/dashboard-view-profile.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>responsive dashboard</title>
+    </head>
+    <body>
+        <!--sidebar-->
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../img/logo-croped.png" class="logo-top">
+                <div class="logo-name">PetCare<span>.</span></div>
+            </a>
+
+            <ul class="side-menu">
+                <li><a href="#"><i class='bx bxs-dashboard' ></i> dashboard</a></li>
+                <li><a href="#"><i class='bx bx-store-alt' ></i>Shop</a></li>
+                <li class="active"><a href="#" ><i class='bx bx-analyse' ></i>Analytics</a></li>
+                <li><a href="#"><i class='bx bx-message-square-dots' ></i>Tickets</a></li>
+                <li><a href="#"><i class='bx bx-group' ></i>Users</a></li>
+                <li><a href="#"><i class='bx bx-group' ></i>Settings</a></li>
+            </ul>
+
+            <ul class="sidemenu">
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out-circle' ></i>
+                        <span class="lo">logout </span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--end of side bar-->
+
+
+        <!--main contenr-->
+
+        <div class="content">
+            <nav>
+                <i class='bx bx-menu' ></i>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="search" placeholder="Searrch..." >
+                        <button class="search-btn" type="submit"><i class='bx bx-search' ></i></button>
+                    </div> 
+                </form>
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="theme-toggle"></label>
+                <a href="#" class="notif">
+                    <i class='bx bx-bell' ></i>
+                    <span class="count">12</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src="../img/profile-1.jpg" >     <!-- image input.....-->
+                </a>
+            </nav>     <!--end of nav bar -->
+
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>My Profile</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                Dashboard
+                            </a></li>  
+                            >
+                            <li><a href="#" class="active"> Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="left">
+                        <img src="../img/profile photo.svg" alt="">
+                    </div>
+                    <div class="middle">
+                        <img src="../img/Line 27.svg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="name-large">
+                            Ava Smith
+                        </div>
+                        <div class="type">
+                            Veterinarian
+                        </div>
+                        <div class="description">
+                            I am a Peradeniya BVSc veterinarian, dedicated to animal well-being, passionate about compassionate care, and committed to enhancing their lives.
+                        </div>
+                        <div class="button-list">
+                            <div class="button-container">
+                                <i class='bx bx-send'></i>
+                                <button class="email">Send Email</button>
+                            </div>
+                            <div class="button-container">
+                                <i class='bx bx-phone-call'></i>
+                                <button class="call">Make a Call</button>
+                            </div>
+                            <div class="button-container">
+                                <i class='bx bx-calendar'></i>
+                                <button class="appointment">Make Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <div class="options">
+                        <button class="appointment">Appointment</button>
+                        <button class="Contact me">Contact me</button>
+                    </div>
+                    <div class="inner-box-1">
+                        <div class="line-1">
+                            <div class="text">
+                                Contact me
+                            </div>
+                            <div class="button-container">
+                                <i class='bx bxs-edit' ></i>
+                                <button class="edit">Edit</button>
+                            </div>
+                        </div>
+                        <div class="line-2">
+                            <div class="email">
+                                <div class="email-text">
+                                    Email
+                                </div>
+                                <div class="email-address inner-text">
+                                    annamarie@petcare.com
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <div class="phone-text">
+                                    Phone
+                                </div>
+                                <div class="phone-number inner-text">
+                                    (+94) 077-1234567
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="address-text ">
+                                    Address
+                                </div>
+                                <div class="address-line inner-text">
+                                    290 Chatham Way Reston, Maryland(MD), 20191
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="inner-box-2">
+                        <div class="line-1">
+                            <div class="text">
+                                Social Links
+                            </div>
+                            <div class="button-container">
+                                <i class='bx bxs-edit' ></i>
+                                <button class="edit">Edit</button>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="social-media-container">
+                                <i class='bx bxl-facebook-circle' ></i>
+                                <button class="btn face-book-btn">Facebook</button>
+                            </div>
+                            <div class="social-media-container">
+                                <i class='bx bxl-whatsapp' ></i>
+                                <button class="btn whatsapp-btn">Whatsapp</button>
+                            </div>
+                            <div class="social-media-container">
+                                <i class='bx bxl-instagram-alt' ></i>
+                                <button class="btn instagram-btn">Instagram</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                
+
+
+
+
+
+
+
+            </main>
+        </div>
+    </body>
+</html>

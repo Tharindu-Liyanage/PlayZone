@@ -489,7 +489,14 @@ body{
     
 }
 
-.content main .email,.address, .mobile, .nic ,.name ,.current-password ,.new-password ,.new-confirm-password ,.billing-email ,.street-address ,.city ,.province {
+.content main .email,.address, .mobile, .nic ,.name ,.current-password  {
+    border-bottom: 2px solid #E4E4E4;
+    display: flex;
+    padding-top :15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+.new-password ,.new-confirm-password ,.billing-email ,.street-address ,.city ,.province ,.twitter ,.facebook ,.instagram{
     border-bottom: 2px solid #E4E4E4;
     display: flex;
     padding-top :15px;
@@ -664,9 +671,36 @@ body{
     
 }
 .content-box .inner-content {
-    display: none;
+    display: none;                         
     animation: moving 0.5s ease; 
 }
+
+.social-media-text {
+    width: 40%;
+}
+
+.input-container{
+    display: flex;
+    position: relative;
+    padding: 5px;
+    background-color:white ;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.inner-content .bx{
+    left: 5px;
+}
+
+.input-container input{
+    border: none;
+    background: none;
+}
+
+
+
+
+
 
 @keyframes moving {
     from {
