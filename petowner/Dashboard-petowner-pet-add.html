@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../PlayZone/css/Dashboard-petowner-pet-add.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>responsive dashboard</title>
+    </head>
+    <body>
+        <!--sidebar-->
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../img/logo-croped.png" class="logo-top">
+                <div class="logo-name">PetCare<span>.</span></div>
+            </a>
+
+            <ul class="side-menu">
+                <li><a href="#"><i class='bx bxs-dashboard' ></i> dashboard</a></li>
+                <li><a href="#"><i class='bx bx-store-alt' ></i>Inventory</a></li>
+                <li class="active"><a href="#" ><i class='bx bx-analyse' ></i>Order</a></li>
+
+                <li><a href="#"><i class='bx bx-group' ></i>Settings</a></li>
+            </ul>
+
+            <ul class="sidemenu">
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out-circle' ></i>
+                        <span class="lo">logout </span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--end of side bar-->
+
+
+        <!--main contenr-->
+
+        <div class="content">
+            <nav>
+                <i class='bx bx-menu' ></i>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="search" placeholder="Searrch..." >
+                        <button class="search-btn" type="submit"><i class='bx bx-search' ></i></button>
+                    </div> 
+                </form>
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="theme-toggle"></label>
+                <a href="#" class="notif">
+                    <i class='bx bx-bell' ></i>
+                    <span class="count">12</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src="../img/profile-1.jpg" >     <!-- image input.....-->
+                </a>
+            </nav>     <!--end of nav bar -->
+
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>My Profile</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                Dashboard
+                            </a></li>  
+                            >
+                            <li><a href="#"> Pet owner</a></li>
+                            >
+                            <li><a href="#" class="active">  Update pet owner</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="title-line">
+                        <i class='bx bxs-cat' ></i>
+                        <div class="title-line-text">Add a pet</div>
+                    </div>
+                    <div class="bottom-part">
+                        <div class="left">
+                            <div class="pet-name ">
+                                <div class="pet-name-text">Pet Name </div>
+                                <div class="pet-name-box">
+                                    <i class='bx bxs-purchase-tag' ></i>
+                                    <input type="text" placeholder="Enter Pet name">
+                                </div>
+                            </div>
+                            <div class="date-of-birth">
+                                <div class="date-of-birth-text"> Date of Birth </div>
+                                <div class="date-of-birth-box">
+                                    <i class='bx bx-time' ></i>
+                                    <input type="date" id="date" class="date-input">
+                                </div>
+                            </div>
+                            <div class="select-species">
+                                <div class="select-species-text"> Select Species </div>
+                                <div class="select-species-box">
+                                    <i class='bx bxs-dashboard' ></i>
+                                    <select id="my-selection" class="selection-dropdown">
+                                        <option value="option1">cat</option>
+                                        <option value="option2">dog</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <div class="breed">
+                                <div class="breed-text"> Breed</div>
+                                <div class="breed-box">
+                                    <i class='bx bxs-dashboard' ></i>
+                                    <input type="text" placeholder="Enter breed">
+                                </div>
+                                
+                            </div>
+                            <div class="sex">
+                                <div class="sex-text"> Sex </div>
+                                <div class="sex-box">
+                                    <i class='bx bx-female-sign' ></i>
+                                    <select id="gender" class="gender-dropdown">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="button-set">
+                            <button class="reset-button">Reset</button>
+                            <button class="update-button">Update</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+            </main>
+        </div>
+    </body>
+</html>

@@ -400,187 +400,174 @@ body{
     
 }
 
-main .box1{
+main .box{
     background-color: var(--light);
-    padding: 25px 25px 10px 25px;
+    padding: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+main .box .title-line{
     display: flex;
-    grid-gap: 50px;
-    border-radius: 10px;
-    margin-top: 20px;
+    grid-gap: 25px;
+    border-bottom: 2px solid var(--grey);
+    padding: 10px;
 }
 
-main .box1 .right{
+main .box .title-line .title-line-text{
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+main .box .bottom-part{
+    display: flex;
+    grid-gap: 200px;
+    padding: 50px;
+}
+main .box .bottom-part .first-name{
     display: flex;
     flex-direction: column;
-    grid-gap: 15px ;
+    grid-gap: 5px;
 }
 
-main .box1 .right .name-large{
-    font-size: 2rem;
+.first-name-text{
     font-weight: 500;
 }
 
-main .box1 .right .type{
-    background-color: #E9F0FF;
-    width: min-content;
-    padding: 4px 10px 4px 10px;
+.first-name-box{
+    border: 2px solid lightgray;
+    padding: 5px;
+    display: flex;
+    grid-gap: 10px;
     border-radius: 10px;
-    color: #355FD8;
-    
-}
-main .box1 .right .description{
-    font-weight: 200;
-    width: 80%;
 }
 
-main .box1 .right .button-list{
-    display: flex;
-    grid-gap: 22px;
-    
+.bottom-part .right{
+    margin-top: 10px;
 }
 
-main .box1 .right .button-list .button-container{
+.first-name-box input{
     background: none;
-    border: 2px solid #9B9C9E;
-    border-radius: 8px;
-    display: flex;
-    grid-gap: 5px;
-    padding: 3px;
-    
-}
-main .box1 .right .button-list .button-container button{
     border: none;
-    background: none;
-    font-weight: 450;
-    
-}
-main .box1 .right .button-list .button-container button:hover{
-    cursor: pointer;
 }
 
-
-main .box2{
-    display: flex;
+main .box .bottom-part .last-name{
     flex-direction: column;
-    grid-gap: 20px;
-    border-radius: 10px;
-    background-color: var(--light);
-    margin-top:30px ;
-    padding: 15px;
+    grid-gap: 5px;
 }
 
-main .box2 .options{
+.last-name-text{
+    font-weight: 500;
+}
+
+.last-name-box{
+    border: 2px solid lightgray;
+    padding: 5px;
     display: flex;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.last-name-box input{
+    background: none;
+    border: none;
+}
+
+.main .box .bottom-part .email{
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.email-text{
+    font-weight: 500;
+}
+
+.email-box{
+    border: 2px solid lightgray;
+    padding: 5px;
+    display: flex;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.email-box input{
+    background: none;
+    border: none;
+}
+
+.bottom-part .right{
+    margin-top: 25px;
+}
+
+.main .box .bottom-part .address{
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.address-text{
+    font-weight: 500;
+}
+
+.address-box{
+    border: 2px solid lightgray;
+    padding: 5px;
+    display: flex;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.address-box input{
+    background: none;
+    border: none;
+}
+
+.main .box .bottom-part .mobile{
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.mobile-text{
+    font-weight: 500;
+}
+
+.mobile-box{
+    border: 2px solid lightgray;
+    padding: 5px;
+    display: flex;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.mobile-box input{
+    background: none;
+    border: none;
+}
+
+.bottom-part .left div{
+    margin: 10px;
+}
+
+.bottom-part .right div{
+    margin: 10px;
+}
+
+.box .footer .button-set{
+    display: flex;
+    padding-left: 70px;
     grid-gap: 40px;
     
-    
 }
-
-main .box2 .options button{
-    background: none;
-    border: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    padding: 10px;
-    padding-top: 20px;
-}
-
-main .box2 .inner-box-1{
-    padding: 15px;
-    background-color: var(--light);
+.footer .button-set button{
+    padding: 10px 50px 10px 50px;
     border-radius: 10px;
-    border: 1px solid #E8E7EC;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 20px;
-    padding-bottom: 30px;
-}
-
-main .box2 .inner-box-1 .line-1{
-    display: flex;
-    grid-gap: 20px;
-    justify-content: space-between;
-}
-
-main .box2 .inner-box-1 .line-2{
-    display: flex;
-    justify-content: space-between;
-    grid-gap: 50px;
-
-}
-
-.email-text ,.phone-text ,.address-text{
-    font-weight: 400;
-}
-
-.inner-text{
-    font-weight: 200;
-}
-
-.inner-box-1 .line-1 .button-container{
-    border: 2px solid #DFE0E4;
-    border-radius: 20px;
-    display: flex;
-    padding: 5px;
-    grid-gap: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.inner-box-1 .line-1 .button-container button{
-    font-weight: 400;
     border: none;
     background: none;
-    font-size: 1rem;
-
+    border: 2px solid var(--dark);
+    font-weight: 550;
+    font-size: 0.8rem;
 }
 
-main .box2 .inner-box-2{
-    padding: 15px;
-    background-color: var(--light);
-    border-radius: 10px;
-    border: 1px solid #E8E7EC;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 20px;
-    padding-bottom: 30px;
-}
-
-main .box2 .inner-box-2 .line-1{
-    display: flex;
-    grid-gap: 20px;
-    justify-content: space-between;
-}
-.inner-box-2 .line-1 .button-container{
-    border: 2px solid #DFE0E4;
-    border-radius: 20px;
-    display: flex;
-    padding: 5px;
-    grid-gap: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.inner-box-2 .line-1 .button-container button{
-    font-weight: 400;
+.footer .button-set .update-button{
+    background-color: #1976D2;
     border: none;
-    background: none;
-    font-size: 1rem;
-
-}
-
-.inner-box-2 .social-media{
-    display: flex;
-    justify-content: space-around;
-}
-.inner-box-2 .social-media .social-media-container{
-    display: flex;
-    align-items: center;
-    grid-gap: 8px;
-}
-.inner-box-2 .social-media .social-media-container button{
-    background: none;
-    border: none;
-    font-size: 0.9rem;
-    font-weight: 400;
-    cursor: pointer;
+    color: white;
 }

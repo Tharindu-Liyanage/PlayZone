@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Dashboard-vet-blog-update.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>responsive dashboard</title>
+    </head>
+    <body>
+        <!--sidebar-->
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../img/logo-croped.png" class="logo-top">
+                <div class="logo-name">PetCare<span>.</span></div>
+            </a>
+
+            <ul class="side-menu">
+                <li><a href="#"><i class='bx bxs-dashboard' ></i> dashboard</a></li>
+                <li><a href="#"><i class='bx bx-store-alt' ></i>Inventory</a></li>
+                <li class="active"><a href="#" ><i class='bx bx-analyse' ></i>Order</a></li>
+
+                <li><a href="#"><i class='bx bx-group' ></i>Settings</a></li>
+            </ul>
+
+            <ul class="sidemenu">
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out-circle' ></i>
+                        <span class="lo">logout </span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--end of side bar-->
+
+
+        <!--main contenr-->
+
+        <div class="content">
+            <nav>
+                <i class='bx bx-menu' ></i>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="search" placeholder="Searrch..." >
+                        <button class="search-btn" type="submit"><i class='bx bx-search' ></i></button>
+                    </div> 
+                </form>
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="theme-toggle"></label>
+                <a href="#" class="notif">
+                    <i class='bx bx-bell' ></i>
+                    <span class="count">12</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src="../img/profile-1.jpg" >     <!-- image input.....-->
+                </a>
+            </nav>     <!--end of nav bar -->
+
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>My Profile</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                Dashboard
+                            </a></li>  
+                            >
+                            <li><a href="#"> Pet owner</a></li>
+                            >
+                            <li><a href="#" class="active">  Update pet owner</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="title-line">
+                        <i class='bx bxs-file-plus'></i>
+                        <div class="title-line-text">Update Article</div>
+                    </div>
+                    <div class="bottom-part">
+                        <div class="left">
+                            <div class="article-title">
+                                <div class="article-title-text">Article Title </div>
+                                <div class="article-title-box">
+                                    <i class='bx bx-pencil' ></i>
+                                    <input type="text"  value="Adopting a Pet">
+                                </div>
+                            </div>
+                            <div class="select-category">
+                                <div class="select-category-text"> Select Category </div>
+                                <div class="select-category-box">
+                                    <i class='bx bxs-dashboard' ></i>
+                                    
+                                    <select id="my-selection" class="selection-dropdown">
+                                        <option value="option1"  selected>Pet Adoption</option>
+                                        <option value="option2">Health Tips</option>
+                                        <option value="option3">petcare</option>
+                                        <option value="option4">Nutrition & Diet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tags">
+                                <div class="tags-text"> Tags </div>
+                                <div class="tags-box">
+                                    <i class='bx bx-purchase-tag' ></i>
+                                    <select id="my-selection" class="selection-dropdown">
+                                        <option value="option1" >All Categories</option>
+                                        <option value="option2" selected>Pet Adopt</option>
+                                        <option value="option3">petcare</option>
+                                        <option value="option4">Nutrition & Diet</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <div class="thumbnail">
+                                <div class="thumbnail-text"> Thumbnail</div>
+                                <div class="thumbnail-box">
+                                    <i class='bx bx-notepad' ></i>
+                                    <input type="text" value="petadopt.jpg">
+                                </div>
+                                
+                            </div>
+                            <div class="content1">
+                                <div class="content1-text"> Content </div>
+                                <div class="content1-box">
+                                    <i class='bx bx-pencil' ></i>
+                                    <textarea name="content-input" id="" cols="30" rows="10">Pet adoption is a wonderful way to add a new furry friend to your family. There are millions of animals in shelters and rescue groups waiting for their forever homes. When you adopt a pet, you are giving them a second chance at a happy life.</textarea>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="button-set">
+                            <button class="reset-button">Reset</button>
+                            <button class="update-button">Update</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+            </main>
+        </div>
+    </body>
+</html>
