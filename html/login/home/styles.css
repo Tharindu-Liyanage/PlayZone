@@ -361,50 +361,121 @@ p{
 }
 
 /* Our Team */
-.team{
+**{
     padding:0;
     margin:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family:"Poppins";
+}
+
+.Team{
+    height :100vh;
+    width:100%;
+    display:grid;
+    place-items:center;
+ }
+
+ .Team{
+    min-height: 100vh;
+    background-color: #F7FAFC;
 
 }
+
 body{
-    background-color: #f6f0ff;
-
+    background-color: #ffffff;
 }
-.row{
-    border:1px solid orange;
+.row1{
     display:flex;
     flex-wrap:wrap;
     padding:2em 1em;
-
-
+    text-align:center;
 }
-.column{
-    width:100%;
-    border: 1px solid black;
-    padding:0.5em 0;
 
+
+
+
+.column1{
+    width:200%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
 }
+
 h1{
     width:100%;
     text-align:center;
     font-size:3.5em;
     color:#1f003b;
-
 }
-.card{
-    box-shadow: 0 0 2.2em rgba(25,0,58,0.15);
+
+.icon1-wrapper{
+    background-color: #2c7bfe;
+    position: relative;
+    margin:auto;
+    font-size:30px;
+    height: 2.5em;
+    width:2.5em;
+    color:#ffffff;
+    border-radius:50%;
+    display:grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.card1{
+    box-shadow:0 0 0.2em rgba(25,0,58,0.15);
     padding:3.5em 1em;
-    border-radius: 0.6em;
-    color: #1f003b;
-    cursor: pointer;
+    border-radius:0.6em;
+    color:#1f003b;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card1:hover{
+    background-position: 0 100%;
 
 }
 
-.card.img-container{
-    width:8em;
+.card1.img-container{
+    width:20em;
     height:8em;
-    background-color:#a993ff;
+    background-color:#FFFFFF;
+    padding:0.5em;
+    border-radius:50%;
+    margin: 0 auto 2em auto;
 
+}
+
+.card1 img{
+    width:200%;
+    border-radius:50%;
+}
+
+.card1 h3{
+    font-weight:500;
+}
+.card1 p{
+    font-weight:300;
+    text-transform:uppercase;
+    margin:0.9em 0 2em 0;
+    letter-spacing:2px;
+}
+
+.icons1{
+    width:50%;
+    min-width:180px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+.card1 a {
+    text-decoration:none;
+    color: inherit;
+    font-size: 1.4em;
+
+}
+.card1:hover{
+    background: linear-gradient( blue);
+    color:#ffffff;
+}
+.card1:hover.img-container{
+    transform:scale(1.1);
 }
