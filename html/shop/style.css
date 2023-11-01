@@ -399,6 +399,13 @@ footer{
     border: 1px solid #ffffff15;
     font-size:0.9rem;
     margin: 0px 5px;
+    transition:all ease 0.3s;
+
+
+}
+.footer-social a:hover{
+    background-color:#4eb060;
+    transition: all ease 0.3s;
 
 }
 
@@ -419,5 +426,14 @@ footer{
     margin: 4px 0px;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    transition:all ease 0.3s;
+
+}
+
+.footer-links li a:hover{
+    opacity: 1;
+    transition:a;; ease 0.3s;
+
+
 
 }
