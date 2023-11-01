@@ -423,17 +423,17 @@ main .box .bottom-part{
     grid-gap: 200px;
     padding: 50px;
 }
-main .box .bottom-part .pet-name{
+main .box .bottom-part .first-name{
     display: flex;
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.pet-name-text{
+.first-name-text{
     font-weight: 500;
 }
 
-.pet-name-box{
+.first-name-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -445,21 +445,21 @@ main .box .bottom-part .pet-name{
     margin-top: 10px;
 }
 
-.pet-name-box input{
+.first-name-box input{
     background: none;
     border: none;
 }
 
-main .box .bottom-part .date-of-birth{
+main .box .bottom-part .last-name{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.date-of-birth-text{
+.last-name-text{
     font-weight: 500;
 }
 
-.date-of-birth-box{
+.last-name-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -467,21 +467,21 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.date-of-birth-box input{
+.last-name-box input{
     background: none;
     border: none;
 }
 
-.main .box .bottom-part .select-species{
+.main .box .bottom-part .email{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.select-species-text{
+.email-text{
     font-weight: 500;
 }
 
-.select-species-box{
+.email-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -489,7 +489,7 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.select-species-box input{
+.email-box input{
     background: none;
     border: none;
 }
@@ -498,16 +498,16 @@ main .box .bottom-part .date-of-birth{
     margin-top: 25px;
 }
 
-.main .box .bottom-part .breed{
+.main .box .bottom-part .address{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.breed-text{
+.address-text{
     font-weight: 500;
 }
 
-.breed-box{
+.address-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -515,21 +515,21 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.breed-box input{
+.address-box input{
     background: none;
     border: none;
 }
 
-.main .box .bottom-part .sex{
+.main .box .bottom-part .mobile{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.sex-text{
+.mobile-text{
     font-weight: 500;
 }
 
-.sex-box{
+.mobile-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -537,7 +537,7 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.sex-box input{
+.mobile-box input{
     background: none;
     border: none;
 }
@@ -570,15 +570,4 @@ main .box .bottom-part .date-of-birth{
     background-color: #1976D2;
     border: none;
     color: white;
-}
-
-.select-species select{
-    background: none;
-    border: none;
-    width: 100%;
-}
-.sex select{
-    background: none;
-    border: none;
-    width: 100%;
 }

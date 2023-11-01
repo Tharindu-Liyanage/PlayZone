@@ -423,17 +423,17 @@ main .box .bottom-part{
     grid-gap: 200px;
     padding: 50px;
 }
-main .box .bottom-part .pet-name{
+main .box .bottom-part .product-name{
     display: flex;
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.pet-name-text{
+.product-name-text{
     font-weight: 500;
 }
 
-.pet-name-box{
+.product-name-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -445,21 +445,21 @@ main .box .bottom-part .pet-name{
     margin-top: 10px;
 }
 
-.pet-name-box input{
+.product-name-box input{
     background: none;
     border: none;
 }
 
-main .box .bottom-part .date-of-birth{
+main .box .bottom-part .brand{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.date-of-birth-text{
+.brand-text{
     font-weight: 500;
 }
 
-.date-of-birth-box{
+.brand-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -467,21 +467,21 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.date-of-birth-box input{
+.brand-box input{
     background: none;
     border: none;
 }
 
-.main .box .bottom-part .select-species{
+.main .box .bottom-part .category{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.select-species-text{
+.category-text{
     font-weight: 500;
 }
 
-.select-species-box{
+.category-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -489,7 +489,7 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.select-species-box input{
+.category-box input{
     background: none;
     border: none;
 }
@@ -498,16 +498,16 @@ main .box .bottom-part .date-of-birth{
     margin-top: 25px;
 }
 
-.main .box .bottom-part .breed{
+.main .box .bottom-part .stock{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.breed-text{
+.stock-text{
     font-weight: 500;
 }
 
-.breed-box{
+.stock-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -515,21 +515,21 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.breed-box input{
+.stock-box input{
     background: none;
     border: none;
 }
 
-.main .box .bottom-part .sex{
+.main .box .bottom-part .price{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.sex-text{
+.price-text{
     font-weight: 500;
 }
 
-.sex-box{
+.price-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -537,7 +537,30 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.sex-box input{
+.price-box input{
+    background: none;
+    border: none;
+}
+
+
+.main .box .bottom-part .image{
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.image-text{
+    font-weight: 500;
+}
+
+.image-box{
+    border: 2px solid lightgray;
+    padding: 5px;
+    display: flex;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.image-box input{
     background: none;
     border: none;
 }
@@ -571,14 +594,8 @@ main .box .bottom-part .date-of-birth{
     border: none;
     color: white;
 }
-
-.select-species select{
-    background: none;
+.category .selection-dropdown{
     border: none;
-    width: 100%;
-}
-.sex select{
     background: none;
-    border: none;
     width: 100%;
 }

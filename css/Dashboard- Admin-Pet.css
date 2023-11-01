@@ -353,6 +353,7 @@ body{
     justify-content:space-between;
     grid-gap: 16px;
     flex-wrap: wrap ;
+    padding: 25px;
 
 }
 
@@ -406,179 +407,134 @@ main .box{
     border-radius: 15px;
     margin-top: 10px;
 }
-main .box .title-line{
+ main .box .orders .header{
     display: flex;
-    grid-gap: 25px;
-    border-bottom: 2px solid var(--grey);
-    padding: 10px;
-}
+ }
 
-main .box .title-line .title-line-text{
-    font-weight: 550;
-    font-size: 1.2rem;
-}
-
-main .box .bottom-part{
+ main .box .orders .header .header-left{
     display: flex;
-    grid-gap: 200px;
-    padding: 50px;
-}
-main .box .bottom-part .pet-name{
+    grid-gap: 15px;
+ }
+
+ main .box .orders .header .header-right{
     display: flex;
-    flex-direction: column;
-    grid-gap: 5px;
+    grid-gap: 15px;
+ }
+
+.content main .bottom-data .orders{
+    flex-grow: 1;
+    flex-basis: 500px;
 }
 
-.pet-name-text{
-    font-weight: 500;
+.content main .bottom-data .orders table{
+    width: 100%;
+    border-collapse: collapse;
+  
 }
 
-.pet-name-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
+
+.content main .bottom-data .orders table th{
+    padding-bottom: 12px;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+    padding-left: 12px;
 }
 
-.bottom-part .right{
-    margin-top: 10px;
-}
-
-.pet-name-box input{
-    background: none;
-    border: none;
-}
-
-main .box .bottom-part .date-of-birth{
-    flex-direction: column;
-    grid-gap: 5px;
-}
-
-.date-of-birth-text{
-    font-weight: 500;
-}
-
-.date-of-birth-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.date-of-birth-box input{
-    background: none;
-    border: none;
-}
-
-.main .box .bottom-part .select-species{
-    flex-direction: column;
-    grid-gap: 5px;
-}
-
-.select-species-text{
-    font-weight: 500;
-}
-
-.select-species-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.select-species-box input{
-    background: none;
-    border: none;
-}
-
-.bottom-part .right{
-    margin-top: 25px;
-}
-
-.main .box .bottom-part .breed{
-    flex-direction: column;
-    grid-gap: 5px;
-}
-
-.breed-text{
-    font-weight: 500;
-}
-
-.breed-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.breed-box input{
-    background: none;
-    border: none;
-}
-
-.main .box .bottom-part .sex{
-    flex-direction: column;
-    grid-gap: 5px;
-}
-
-.sex-text{
-    font-weight: 500;
-}
-
-.sex-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.sex-box input{
-    background: none;
-    border: none;
-}
-
-.bottom-part .left div{
-    margin: 10px;
-}
-
-.bottom-part .right div{
-    margin: 10px;
-}
-
-.box .footer .button-set{
-    display: flex;
-    padding-left: 70px;
-    grid-gap: 40px;
+.content main .bottom-data .orders table td{
+    padding: 16px 12px;
     
 }
-.footer .button-set button{
-    padding: 10px 50px 10px 50px;
-    border-radius: 10px;
-    border: none;
-    background: none;
-    border: 2px solid var(--dark);
-    font-weight: 550;
+
+.content main .bottom-data .orders table tr td:nth-child(2){
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+    margin-right: 0;
+    
+}
+
+.content main .bottom-data .orders table tr td:first-child{
+   padding-right: 15px ;
+    
+}
+
+.content main .bottom-data .orders table td.action .act-icon{
+    display: flex;
+    grid-gap: 15px;
+    vertical-align: middle;
+    align-items: center;
+    
+    
+}
+
+.content main .bottom-data .orders table td.action .act-icon i{
+   
+    font-size: 22px;
+    
+}
+
+.content main .bottom-data .orders table td.profile img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content main .bottom-data .orders table td.action img{
+    
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+
+.content main .bottom-data .orders table tbody tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--grey); /*for tr bottom line*/
+    font-weight: 250;
+    font-size: 0.8rem;
+    
+}
+
+.content main .bottom-data .orders table tbody tr:hover{
+    background: var(--grey);
+}
+
+
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-block .footer-left{
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+.footer-block .footer-left .current{
+    color: blue;
+}
+.footer-block .footer-left .total{
+    color: blue;
+}
+.footer-block .footer-right{
+    display: flex;
+    grid-gap: 15px;
+    font-weight:200;
     font-size: 0.8rem;
 }
 
-.footer .button-set .update-button{
-    background-color: #1976D2;
-    border: none;
+.footer-block .footer-right .page3{
+    background-color: blue;
     color: white;
 }
 
-.select-species select{
-    background: none;
-    border: none;
-    width: 100%;
-}
-.sex select{
-    background: none;
-    border: none;
-    width: 100%;
+.footer-block .footer-right .page{
+    padding: 3px;
+    
 }

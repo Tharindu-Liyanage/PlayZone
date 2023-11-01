@@ -423,43 +423,44 @@ main .box .bottom-part{
     grid-gap: 200px;
     padding: 50px;
 }
-main .box .bottom-part .pet-name{
+main .box .bottom-part .pet{
     display: flex;
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.pet-name-text{
+.pet-text{
     font-weight: 500;
 }
 
-.pet-name-box{
+.pet-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
     grid-gap: 10px;
     border-radius: 10px;
+    
 }
 
 .bottom-part .right{
     margin-top: 10px;
 }
 
-.pet-name-box input{
+.pet-box input{
     background: none;
     border: none;
 }
 
-main .box .bottom-part .date-of-birth{
+main .box .bottom-part .follow-up-date-selector{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.date-of-birth-text{
+.follow-up-date-selector-text{
     font-weight: 500;
 }
 
-.date-of-birth-box{
+.follow-up-date-selector-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
@@ -467,79 +468,52 @@ main .box .bottom-part .date-of-birth{
     border-radius: 10px;
 }
 
-.date-of-birth-box input{
+.follow-up-date-selector-box input{
     background: none;
     border: none;
 }
 
-.main .box .bottom-part .select-species{
-    flex-direction: column;
-    grid-gap: 5px;
-}
 
-.select-species-text{
-    font-weight: 500;
-}
-
-.select-species-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.select-species-box input{
-    background: none;
-    border: none;
-}
 
 .bottom-part .right{
     margin-top: 25px;
 }
 
-.main .box .bottom-part .breed{
+.main .box .bottom-part .medical-checkup{
     flex-direction: column;
     grid-gap: 5px;
 }
 
-.breed-text{
+.medical-checkup-text{
     font-weight: 500;
 }
 
-.breed-box{
+
+.main .box .bottom-part .veterinarian-note{
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.veterinarian-note-text{
+    font-weight: 500;
+}
+
+.veterinarian-note-box{
     border: 2px solid lightgray;
     padding: 5px;
     display: flex;
     grid-gap: 10px;
     border-radius: 10px;
+    height: 150px;
+    vertical-align: to;
+    
 }
 
-.breed-box input{
+.veterinarian-note-box input{
     background: none;
     border: none;
-}
-
-.main .box .bottom-part .sex{
-    flex-direction: column;
-    grid-gap: 5px;
-}
-
-.sex-text{
-    font-weight: 500;
-}
-
-.sex-box{
-    border: 2px solid lightgray;
-    padding: 5px;
-    display: flex;
-    grid-gap: 10px;
-    border-radius: 10px;
-}
-
-.sex-box input{
-    background: none;
-    border: none;
+   
+    
 }
 
 .bottom-part .left div{
@@ -572,13 +546,18 @@ main .box .bottom-part .date-of-birth{
     color: white;
 }
 
-.select-species select{
-    background: none;
+.selection-dropdown{
     border: none;
+    background: none;
     width: 100%;
 }
-.sex select{
-    background: none;
-    border: none;
-    width: 100%;
+
+.veterinarian-note .veterinarian-note-box{
+    display: flex;
 }
+
+.veterinarian-note .veterinarian-note-box textarea{
+    border: none;
+    background: none; 
+    padding: 5px;
+ }
