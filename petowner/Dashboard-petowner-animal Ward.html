@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../PlayZone/css/Dashboard- Admin-appointment.css">
+        <link rel="stylesheet" href="../../PlayZone/css/Dashboard-petowner-animal Ward.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>responsive dashboard</title>
     </head>
@@ -60,13 +60,13 @@
             <main>
                 <div class="header">
                     <div class="left">
-                        <h1>Dashboard</h1>
+                        <h1>Animal Ward</h1>
                         <ul class="breadcrumb">
                             <li><a href="#">
                                 Dashboard
                             </a></li>  
                             >
-                            <li><a href="#" class="active"> Appointment</a></li>
+                            <li><a href="#" class="active"> Animal Ward</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,11 +76,11 @@
                         <div class="orders">
                             <div class="header">
                                 <div class="header-left">
-                                    <h3>Today Appointment</h3>
+                                    <h3>Animal Ward</h3>
                                 </div>
                                 <div class="header-right">
-                                    <i class='bx bx-filter'></i>
                                     <i class='bx bx-search'></i>
+                                    <i class='bx bx-filter'></i>
                                 </div>
                             </div>
                             <table>
@@ -89,25 +89,29 @@
                                         <th>Id</th>
                                         <th>Pet Owmer</th>
                                         <th>Pet</th>
-                                        <th>Time</th>
-                                        <th>Type</th>
+                                        <th>Admit Date</th>
+                                        <th>Discharge Date</th>
+                                        <th>Treatment</th>
                                         <th>Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td class="profile">
-                                            <img src="../img/profile photo.svg"><p>  Johnson</p>
+                                            <img src="../img/profile-1.jpg"><p>  Johnson</p>
                                         </td>
                                         <td>
                                             <p> Zoro</p>
                                         </td>
-                                        <td>11:20</td>
-                                        <td>Grooming</td>
-                                        <td class="status-text" >
+                                        <td>01-09-2023</td>
+                                        <td>-05-09-2023</td>
+                                        <td>Finished</td>
+                                        <td class="status-text red" >
                                             Completed
                                         </td>
+                                        <td><i class='bx bx-show' ></i></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -117,11 +121,13 @@
                                         <td>
                                             <p> garfied</p>
                                         </td>
-                                        <td>11:45</td>
-                                        <td>Grooming</td>
-                                        <td class="status-text" >
+                                        <td>31-08-2023</td>
+                                        <td>10-10-2023</td>
+                                        <td>Finished</td>
+                                        <td class="status-text red" >
                                             Confirmed
                                         </td>
+                                        <td><i class='bx bx-show' ></i></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -131,11 +137,13 @@
                                         <td>
                                             <p> Rex</p>
                                         </td>
-                                        <td>12:20</td>
-                                        <td>Grooming</td>
-                                        <td class="status-text" >
+                                        <td>31-08-2023</td>
+                                        <td>01-09-2023</td>
+                                        <td>Finished</td>
+                                        <td class="status-text red" >
                                             Completed
                                         </td>
+                                        <td><i class='bx bx-show' ></i></td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
@@ -145,11 +153,13 @@
                                         <td>
                                             <p> Oreo</p>
                                         </td>
-                                        <td>11:45</td>
-                                        <td>Grooming</td>
+                                        <td>15-08-2023</td>
+                                        <td>17-08-2023</td>
+                                        <td>Finished</td>
                                         <td class="status-text red" >
                                             Cancelled
                                         </td>
+                                        <td><i class='bx bx-show' ></i></td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
@@ -159,11 +169,13 @@
                                         <td>
                                             <p> Rocky</p>
                                         </td>
-                                        <td>10:20</td>
-                                        <td>Grooming</td>
-                                        <td class="status-text red" >
-                                            Rescheduled
+                                        <td>01-08-2023</td>
+                                        <td></td>
+                                        <td>Finished</td>
+                                        <td class="status-text green" >
+                                            In Progress
                                         </td>
+                                        <td><i class='bx bx-show' ></i></td>
                                     </tr>
                                     <!-- Add more rows as needed -->
                                 </tbody>

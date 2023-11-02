@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../PlayZone/css/Dashboard- Admin-Pet.css">
+        <link rel="stylesheet" href="../../css/Dashboard-vet-treatment.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>responsive dashboard</title>
     </head>
@@ -60,14 +60,17 @@
             <main>
                 <div class="header">
                     <div class="left">
-                        <h1>Dashboard</h1>
+                        <h1>Treatment</h1>
                         <ul class="breadcrumb">
                             <li><a href="#">
                                 Dashboard
                             </a></li>  
                             >
-                            <li><a href="#" class="active"> Pet </a></li>
+                            <li><a href="#" class="active"> Treatment </a></li>
                         </ul>
+                    </div>
+                    <div class="right">
+                        <button class="add-product-btn">Add Treatment</button>
                     </div>
                 </div>
                 <div class="box">
@@ -76,8 +79,7 @@
                         <div class="orders">
                             <div class="header">
                                 <div class="header-left">
-                                    <i class='bx bxs-dog' ></i>
-                                    <h3>Pet </h3>
+                                    <h3>Latest Treatment </h3>
                                 </div>
                                 <div class="header-right">
                                     <i class='bx bx-filter'></i>
@@ -89,11 +91,10 @@
                                     <tr>
                                         <th>Id</th>
                                         <th>Pet</th>
-                                        <th>DOB</th>
-                                        <th>Breed</th>
-                                        <th>Sex</th>
-                                        <th>Age</th>
-                                        <th>Species</th>
+                                        <th>Treatment Date</th>
+                                        <th>Time</th>
+                                        <th>Type</th>
+                                        <th>Follow-up Date</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -101,16 +102,15 @@
                                     <tr>
                                         <td>1</td>
                                         <td class="profile">
-                                            <img src="../img/dog1.png"><p> Zoro</p>
+                                            <img src="../../img/dog1.png"><p> Zoro</p>
                                         </td>
                                         <td>01-09-2023</td>
-                                        <td>Labrador Retriever</td>
-                                        <td>Male</td>
-                                        <td>2</td>
-                                        <td>Dog</td>
+                                        <td>11.30AM</td>
+                                        <td>Grooming</td>
+                                        <td class="red">None</td>
                                         <td class="action">
                                             <div class="act-icon">
-                                                <i class='bx bx-trash'></i>
+                                                <i class='bx bx-show' ></i>
                                                 <i class='bx bx-edit'></i>
                                             </div>
                                         </td>
@@ -118,16 +118,15 @@
                                     <tr>
                                         <td>2</td>
                                         <td class="profile">
-                                            <img src="../img/cat2.png"><p> Garfield</p>
+                                            <img src="../../img/cat2.png"><p> Garfield</p>
                                         </td>
                                         <td>31-08-2023</td>
-                                        <td>Persian</td>
-                                        <td>Male</td>
-                                        <td>1</td>
-                                        <td>Cat</td>
+                                        <td>11.00AM</td>
+                                        <td>Surgery</td>
+                                        <td>07-09-2023</td>
                                         <td class="action">
                                             <div class="act-icon">
-                                                <i class='bx bx-trash'></i>
+                                                <i class='bx bx-show' ></i>
                                                 <i class='bx bx-edit'></i>
                                             </div>
                                         </td>
@@ -135,16 +134,15 @@
                                     <tr>
                                         <td>3</td>
                                         <td class="profile">
-                                            <img src="../img/dog1.png"><p> Rex</p>
+                                            <img src="../../img/dog1.png"><p> Rex</p>
                                         </td>
                                         <td>31-08-2023</td>
-                                        <td>Golden Retriever</td>
-                                        <td>Female</td>
-                                        <td>3</td>
-                                        <td>Dog</td>
+                                        <td>1.00 PM</td>
+                                        <td>Dental</td>
+                                        <td>10-09-2023</td>
                                         <td class="action">
                                             <div class="act-icon">
-                                                <i class='bx bx-trash'></i>
+                                                <i class='bx bx-show' ></i>
                                                 <i class='bx bx-edit'></i>
                                             </div>
                                         </td>
@@ -152,16 +150,31 @@
                                     <tr>
                                         <td>4</td>
                                         <td class="profile">
-                                            <img src="../img/cat1.png"><p> Orep</p>
+                                            <img src="../../img/cat1.png"><p> Orep</p>
                                         </td>
                                         <td>01-09-2023</td>
-                                        <td>Siamese</td>
-                                        <td>Male</td>
-                                        <td>2</td>
-                                        <td>Cat</td>
+                                        <td>1.30 PM</td>
+                                        <td>Vaccination</td>
+                                        <td class="red">None</td>
                                         <td class="action">
                                             <div class="act-icon">
-                                                <i class='bx bx-trash'></i>
+                                                <i class='bx bx-show' ></i>
+                                                <i class='bx bx-edit'></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="profile">
+                                            <img src="../../img/dog2.png"><p> Orep</p>
+                                        </td>
+                                        <td>01-04-2023</td>
+                                        <td>12.30 PM</td>
+                                        <td>Dental</td>
+                                        <td class="red">None</td>
+                                        <td class="action">
+                                            <div class="act-icon">
+                                                <i class='bx bx-show' ></i>
                                                 <i class='bx bx-edit'></i>
                                             </div>
                                         </td>

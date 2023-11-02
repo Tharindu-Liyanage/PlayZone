@@ -385,6 +385,7 @@ body{
     pointer-events: none;
 }
 
+
 main .home-box{
     background-color: #FFFFFF;
     display: flex;
@@ -392,112 +393,81 @@ main .home-box{
     padding: 20px;
     border-radius: 19px;
     margin-top: 25px;
-    height: 180px;
+    margin-bottom: 25px;
 }
 
 main .home-box .home-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-main .home-box .home-left .home-text-large{
-    font-size: 2rem;
-    font-weight: 300;
-}
-main .home-box .home-left .home-text-large span{
-    font-weight: 550;
-    color: var(--dark);
+    justify-content: center;
+    grid-gap: 30px;
 }
 
-main .home-box .home-left .home-text-small{
-    border-bottom: 1px solid --grey;
-    font-weight: 200;
+main .home-box .home-right{
+    display: block;
+    position: relative;
 }
-
-main .home-box .home-left .home-text-small span{
-    color: var(--primary);
-}
-
 main .home-box .home-right img{
-    position: absolute;
-    margin-top: -65px;
-    margin-left: -150px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-main .home-box2{
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 19px;
-    margin-top: 25px;
+main .home-box .home-left .home-text-large{
+    font-weight: 250;
+    font-size: 2rem;
+    margin-top: -40px;
 }
-main .home-box2 .home-left2{
+
+main .my-pet-box{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius:19px ;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+main .my-pet-box div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
-main .home-box2 .home-left2 .home-text-large{
-    font-size: 2rem;
-    font-weight: 300;
+main .my-pet-box div img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+main .my-pet-box div .bx{
+    font-size: 100px;
 }
 
-main .home-box2 .home-left2 .home-text-large span{
+.home-text-large span{
     font-weight: 550;
 }
 
-main .home-box2 .home-left2 .date-time-type{
-    display: flex;
-    grid-gap: 20px;
-}
-main .home-box2 .home-left2 .buttons {
-    display: flex;
-    grid-gap: 15px;
-}
-
-main .home-box2 .home-left2 .date-time-type div{
-    font-weight: 450;
-}
-
-main .home-box2 .home-left2 .date-time-type span{
-    font-weight: 150;
-}
-
-main .home-box2 .home-left2 .buttons .button{
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    border: 2px solid var(--dark);
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 500;
-}
-
-main .home-box2 .home-left2 .buttons .treatment-button{
-    background-color: #1976D2;
-    border: none;
-    color: white;
-}
-
-main .home-box2 .home-right img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-
+.my-pet-text{
+    font-size: 2rem;
+    font-weight: 550;
+    color: var(--dark);
+    margin: 10px auto 10px auto;
 }
 
 main .box{
     background-color: var(--light);
     padding: 18px;
     border-radius: 15px;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
  main .box .orders .header{
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
  }
 
  main .box .orders .header .header-left{
@@ -509,6 +479,7 @@ main .box{
     display: flex;
     grid-gap: 15px;
  }
+
 
 .content main .bottom-data .orders{
     flex-grow: 1;
@@ -644,3 +615,18 @@ tr .pet-profile{
     padding: 3px;
     
 }
+.green{
+    color: green;
+}
+
+.green, .red{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
