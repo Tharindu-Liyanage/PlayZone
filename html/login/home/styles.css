@@ -376,6 +376,8 @@ p{
 
 .team-body{
     background-color: #ffffff;
+    min-height: 100vh;
+
 }
 .team-row{
     display:flex;
@@ -434,7 +436,7 @@ h1{
 }
 
 .team-card img{
-    width:100%;
+    width:50%;
     border-radius:50%;
 }
 
@@ -481,17 +483,23 @@ h1{
         padding: 1em;
     }
     .team-card{
-        padding :5em 1em;
+        padding :5em 2em;
     }
     .team-column{
         flex: 0 0 33.33%;
         max-width: 33.33%;
-        padding: 0 1em;
+        padding: 0 3em;
     }
 
 }
 
 /* blog */
+
+.blogs{
+    min-height: 100vh;
+    background-color: #F7FAFC;
+
+}
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
@@ -499,19 +507,19 @@ h1{
 }
 .blogs .box-container .box{
      overflow:hidden;
-     border-radius: 6.5rem;
+     border-radius: 2.5rem;
      box-shadow: var(--box-shadow);
      background: #fff;
 }
 
 .blogs .box-container .box img{
-    height: 25rem;
+    height: 2rem;
     width:100%;
     object-fit: cover;  
 }
 
 .blogs .box-container .box .content{
-    padding: 2rem;
+    padding: 1rem;
     
 }
 .blogs .box-container .box .content .icons{
@@ -519,7 +527,8 @@ h1{
     align-items:center;
     justify-content:space-between;
     padding-bottom:1.5rem;
-    margin-bottom:8rem;
+    margin-top:5rem;
+    margin-bottom:5rem;
     border-bottom:var(--border);
 }
 
