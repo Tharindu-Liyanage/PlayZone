@@ -416,6 +416,12 @@ body{
     cursor: pointer;
 }
 
+.content main form{
+    background-color: var(--light);
+    padding: 20px 25px 20px 25px;
+    border-radius: 10px;
+    margin: 15px 5px 10px 5px;
+}
 
 
 
@@ -474,6 +480,7 @@ body{
     display: flex;
     justify-content: space-between;
     
+    
 }
 
 
@@ -487,6 +494,21 @@ body{
 .content main .name .lastname-textbox{
     
     
+}
+
+.name .right-name{
+    display: flex;
+    margin-left: 30px;
+    grid-gap: 10px;
+}
+.name .right-name input{
+    width: 45%;
+}
+.lastname-textbox{
+    flex-grow: 1;
+}
+.firstname-textbox{
+    margin-left: 55px;
 }
 
 .content main .email,.address, .mobile, .nic ,.name ,.current-password  {
@@ -608,10 +630,16 @@ body{
 
 .text-box{
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #F8F9FD;
 }
 
+.text-box1{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F8F9FD;
+    width: 100%;
+}
 
 
 .content main form .content-box .inner-content .current-password,.new-confirm-password,.new-password{
@@ -624,7 +652,7 @@ body{
 
 .password-box{
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #F8F9FD;
     width: 400px;
 }
@@ -697,6 +725,24 @@ body{
     background: none;
 }
 
+.text-box2{
+    padding: 10px;
+    width:50%;
+    border-radius: 10px;
+    border: none;
+}
+
+.province-email-textbox ,.city-email-textbox ,.{
+    padding: 8px;
+}
+
+.social-media-textbox{
+    width: 60%;
+}
+
+.input-container ,.text-box ,.text-box-1 ,.text-box2{
+    border: 1px solid var(--dark-grey);
+}
 
 
 
