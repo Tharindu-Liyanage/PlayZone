@@ -501,24 +501,45 @@ h1{
 
  /* footer */
 footer{
+    
+    background-color: var(--background1);
     display : flex;
     flex-wrap:wrap;
     justify-content:space-between;
 }
 
-footer.col{
+footer .logo-flex {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+footer .logo-flex span{
+    font-size: 30px;
+    position: relative;
+    top:-15px;
+}
+
+footer .col:nth-child(1){
+    margin-left: 25px;
+}
+
+footer .col{
+    margin-top: 10px;
     display : flex;
     flex-direction:column;
     align-items:flex-start;
     margin-bottom:20px;   
 }
 
-footer.logo{
+footer img.logo{
     margin-bottom: 50px;
+    width: 50px;
+    height: auto;
 }
 
 footer h4{
-    font-size:14px;
+    font-size:15px;
     padding-bottom: 20px;
     
 }
@@ -537,35 +558,34 @@ footer a{
    
 }
 
-footer.follow{
+footer .follow{
     margin-top: 20px;
 
 
 }
 
-footer.follow i{
+footer .follow i{
     color:#465b52;
     padding-right: 4px;
     cursor: pointer;
 
 }
 
-footer.install.row img{
-    border: 1px solid #088178;
-    border-radius: 6px;
+footer .install .row i{
+   font-size: 50px;
 
 
 }
 
-footer.install img{
+footer .install i{
     margin: 10px 0 15px 0;
 }
 
-footer.follow i :hover{
+footer .follow i :hover{
     color:#088178;
 }
 
-footer.copyright{
+footer .copyright{
     width:100%;
     text-align:center;
 
